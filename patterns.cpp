@@ -170,7 +170,7 @@ void pattern9(int n)
 
         for (int j = 1; j <= space; j++)
         {
-            cout << "";
+            cout << " ";
         }
 
         for (int j = i; j >= 1; j--)
@@ -182,6 +182,21 @@ void pattern9(int n)
         space -= 2;
     }
 }
+
+void pattern10(int n)
+{
+    int num = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << num << " ";
+            num = num + 1;
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     int t;
@@ -190,6 +205,6 @@ int main()
     {
         int n;
         cin >> n;
-        pattern9(n);
+        pattern10(n);
     }
 }
